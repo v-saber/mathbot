@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path , include
 from mathbot_master import views
 #from mathbot_forum import views
 
@@ -25,5 +25,6 @@ urlpatterns = [
     path('contact/', views.mathbotCont),
     path('forum/', views.mathbotForum),
     path('forum/ask/', views.mathbotAsk),
-    path('forum/questions/1354628/', views.mathbotQues)
+    path('forum/questions/1354628/', views.mathbotQues),
+    path('games/', include('mathbot_games.urls')),
 ]
