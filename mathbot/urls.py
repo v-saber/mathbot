@@ -24,4 +24,6 @@ urlpatterns = [
     path('calculator/', views.mathbotCalc),
     path('contact/', views.mathbotCont),
     path('forum/', views.mathbotForum),
+    path('forum/ask/', views.mathbotAsk),
+    path('forum/questions/1354628/', views.mathbotQues)
 ]

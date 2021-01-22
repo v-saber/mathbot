@@ -10,3 +10,7 @@ def mathbotCont(request):
     return render(request, 'mathbot_contact/index.html')
 def mathbotForum(request):
     return render(request, 'mathbot_forum/index.html')
+def mathbotAsk(request):
+    return render(request, 'mathbot_forum/ask/index.html')
+def mathbotQues(request):
+    return render(request, 'mathbot_forum/questions/1354628/index.html')

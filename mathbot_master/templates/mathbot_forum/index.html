@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,9 +13,9 @@
     <meta name="keywords" content="انجمن ریاضی , پرسش و پاسخ ریاضی">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="../assets/css/bootstrap-rtl.css" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/icons/css/all.css" />
+    <link rel="stylesheet" href="{% static  'assets/css/bootstrap-rtl.css' %}" />
+    <link rel="stylesheet" href="{% static  'assets/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static  'assets/icons/css/all.css' %}" />
 </head>
 
 <body>
@@ -22,7 +24,7 @@
             <div class="row">
                 <div class="col-md-5 col-xs-4"></div>
                 <div class="col-md-2 col-xs-4">
-                    <a class="logo-button" href="https://mathbot.ir"><span class="logo-button-span">م</span>ث <span class="logo-button-span">ب</span>ات</a>
+                    <a class="logo-button" href="/"><span class="logo-button-span">م</span>ث <span class="logo-button-span">ب</span>ات</a>
                 </div>
                 <div class="col-md-5 col-xs-4"></div>
             </div>
@@ -33,11 +35,11 @@
             <div class="col-md-9">
                 <div class="forum-title">
                     <h3>پر بازدید ترین سوالات انجمن</h3>
-                    <a class="title-a" href="https://mathbot.ir/forum">سوال خودت رو بپرس</a>
+                    <a class="title-a" href="ask/">سوال خودت رو بپرس</a>
                 </div>
                 <div class="col-md-12 col-xs-12">
                     <div class="question-box">
-                        <a class="question-box-link" href="http://localhost/projects/mathbot/forum/1354628">
+                        <a class="question-box-link" href="questions/1354628/">
                             <h4>نام سوال</h4>
                             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ...</p>
                         </a>
